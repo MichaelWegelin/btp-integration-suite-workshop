@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZC_MWIS_SORDER'
+@MappingRole: true
+define role ZC_MWIS_SORDER {
+  grant select on ZC_MWIS_SORDER
+  where INHERITING CONDITIONS FROM ENTITY ZR_MWIS_SORDER REPLACING { ROOT WITH _BaseEntity };
+}

@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZR_MWIS_SORDER'
+@MappingRole: true
+define role ZR_MWIS_SORDER {
+  grant select on ZR_MWIS_SORDER
+  where TRUE;
+}

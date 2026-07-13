@@ -1,0 +1,43 @@
+managed implementation in class ZBP_R_MWIS_SORDER unique;
+strict ( 2 );
+extensible;
+define behavior for ZR_MWIS_SORDER alias SalesOrder
+persistent table ZMWIS_SORDER
+extensible
+etag master LocalChangedAt
+lock master
+authorization master( global )
+{
+  field ( readonly )
+   OrderUUID,
+   LocalCreatedBy,
+   LocalCreatedAt,
+   LocalChangedBy,
+   LocalChangedAt,
+   LastChangedAt;
+
+  field ( numbering : managed )
+   OrderUUID;
+
+
+  create;
+  update;
+  delete;
+
+  mapping for ZMWIS_SORDER corresponding extensible
+  {
+    OrderUUID = ORDER_UUID;
+    ExternalOrderID = EXTERNAL_ORDER_ID;
+    CustomerName = CUSTOMER_NAME;
+    GrossAmount = GROSS_AMOUNT;
+    CurrencyCode = CURRENCY_CODE;
+    OrderDate = ORDER_DATE;
+    Status = STATUS;
+    LocalCreatedBy = LOCAL_CREATED_BY;
+    LocalCreatedAt = LOCAL_CREATED_AT;
+    LocalChangedBy = LOCAL_CHANGED_BY;
+    LocalChangedAt = LOCAL_CHANGED_AT;
+    LastChangedAt = LAST_CHANGED_AT;
+  }
+
+}
