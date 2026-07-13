@@ -24,6 +24,8 @@ authorization master( global )
   update;
   delete;
 
+  determination SetDefaults on modify { create; }
+
   mapping for ZMWIS_SORDER corresponding extensible
   {
     OrderUUID = ORDER_UUID;
