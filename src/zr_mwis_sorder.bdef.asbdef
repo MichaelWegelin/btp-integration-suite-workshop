@@ -9,15 +9,17 @@ lock master
 authorization master( global )
 {
   field ( readonly )
-   OrderUUID,
    LocalCreatedBy,
    LocalCreatedAt,
    LocalChangedBy,
    LocalChangedAt,
    LastChangedAt;
 
-  field ( numbering : managed )
+  field ( numbering : managed, readonly )
    OrderUUID;
+
+  field (readonly)
+    OrderDate;
 
 
   create;
