@@ -9,7 +9,7 @@ Rheinwerk_SAPIS_1.pptx
 Rheinwerk_SAPIS_2.pptx
 ```
 
-## Workshop 3: Eignisgesteuerte Architekturen mit Event Mesh realisieren
+## Workshop 3: Ereignisgesteuerte Architekturen mit Event Mesh realisieren
 ```text
 Rheinwerk_SAPIS_3.pptx
 ```
