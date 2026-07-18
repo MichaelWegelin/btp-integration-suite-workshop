@@ -1,0 +1,10 @@
+{
+    "SalesOrder": {
+        "SalesOrderType": {
+            "ExternalOrderID": "0815",
+            "CustomerName": "Müller GmbH",
+            "GrossAmount": 1299.00,
+            "CurrencyCode": "EUR"
+            }
+    }
+}
