@@ -9,3 +9,4 @@
 | Value Mapping nicht gefunden | Artefakt nicht deployt | Value Mapping separat deployen |
 | `NoWorkerInstanceAvailable` | Runtime temporär nicht verfügbar | später erneut deployen |
 | Trace bleibt leer | Trace zu spät aktiviert oder Laufzeitproblem | Trace vor dem Aufruf aktivieren |
+|EDMX Fetch failed with HTTP Response Code: 200|Web-Host statt API-Host; Antwort enthält HTML statt EDMX|abap.eu10... statt abap-web.eu10... verwenden|
