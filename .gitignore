@@ -1,0 +1,8 @@
+.env
+*.key
+*.p12
+*.pfx
+*.jks
+*service-key*.json
+*credentials*.json
+*secret*
