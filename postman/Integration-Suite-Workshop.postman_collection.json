@@ -1,0 +1,108 @@
+{
+  "info": {
+    "_postman_id": "3c100d41-66e5-473d-b5ed-0a65f2b2190f",
+    "name": "SAP Integration Suite Workshop",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "44577122",
+    "_collection_link": "https://go.postman.co/collection/44577122-3c100d41-66e5-473d-b5ed-0a65f2b2190f?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "01 - Standard Order",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"order\": {\r\n    \"id\": \"0816\",\r\n    \"customer\": {\r\n      \"name\": \"Klein GmbH\"\r\n    },\r\n    \"total\": {\r\n      \"amount\": 499.00,\r\n      \"currency\": \"EUR\"\r\n    }\r\n  }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{runtime_url}}{{sender_path}}",
+          "host": [
+            "{{runtime_url}}{{sender_path}}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "02 - High-Value Order",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"order\": {\r\n    \"id\": \"0817\",\r\n    \"customer\": {\r\n      \"name\": \"Müller GmbH\"\r\n    },\r\n    \"total\": {\r\n      \"amount\": 1299.00,\r\n      \"currency\": \"EUR\"\r\n    }\r\n  }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{runtime_url}}{{sender_path}}",
+          "host": [
+            "{{runtime_url}}{{sender_path}}"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "auth": {
+    "type": "basic",
+    "basic": [
+      {
+        "key": "password",
+        "value": "{{client_secret}}",
+        "type": "string"
+      },
+      {
+        "key": "username",
+        "value": "{{client_id}}",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
+}
