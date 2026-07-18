@@ -1,0 +1,12 @@
+{
+  "order": {
+    "id": "0815",
+    "customer": {
+      "name": "Müller GmbH"
+    },
+    "total": {
+      "amount": 299.00,
+      "currency": "EUR"
+    }
+  }
+}
