@@ -28,7 +28,8 @@ SAP BTP ABAP Environment
 ```text
 integration-suite/
 ├── packages/
-│   └── WebshopSalesOrderIntegration.zip
+│   └── Sales Order Workshop.zip
+│   └── Sales Order Workshop - Development Stages.zip
 ├── schemas/
 │   ├── Webshop.xsd
 │   └── SalesOrderEntityPOST.xsd
@@ -41,14 +42,14 @@ integration-suite/
 
 ### `packages`
 
-Enthält das aus SAP Integration Suite exportierte Integration Package. Die ZIP-Datei kann in einen eigenen Cloud-Integration-Tenant importiert werden.
+Enthält die aus SAP Integration Suite exportierten Integration Packages. Die ZIP-Dateien können in einen eigenen Cloud-Integration-Tenant importiert werden.
 
 ### `schemas`
 
 Enthält die im Integration Flow verwendeten XML-Schemas:
 
 - `WebshopOrder.xsd` beschreibt das fachliche Nachrichtenmodell des Webshops.
-- `SalesOrder.xsd` beschreibt das vom OData-V4-Receiver erwartete Zielmodell.
+- `SalesOrderEntityPOST.xsd` beschreibt das vom OData-V4-Receiver erwartete Zielmodell.
 
 ### `examples`
 
@@ -90,9 +91,9 @@ Der ABAP-Code des Zielsystems befindet sich im Verzeichnis:
 
 Abhängig vom Exportformat kann das Package alternativ zunächst entpackt beziehungsweise über die Importfunktion für Packages hochgeladen werden.
 
-## Enthaltenew Artefakte
+## Enthaltene Artefakte
 
-Das Package enthält den Integration Flow `Create Sales Order`, der Aufträge verarbeitet und überträgt
+Das Packages enthlten die unterschiedlichen Entwicklungsstufen des Integration Flow `SalesOrder`, der Aufträge verarbeitet und überträgt
 
 Die tatsächlichen Artefaktnamen können abhängig vom jeweiligen Stand des Workshop-Package leicht abweichen.
 
