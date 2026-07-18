@@ -1,0 +1,12 @@
+{
+  "order": {
+    "id": "4711",
+    "customer": {
+      "name": "Myer"
+    },
+    "total": {
+      "amount": 1299.00,
+      "currency": "EUR"
+    }
+  }
+}
