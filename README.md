@@ -1,14 +1,15 @@
-# BTP Integration Suite Workshop
+# SAP Integration Suite Workshop
 
-## Schnellstart
+Dieses Repository enthält die Artefakte des Workshops
+„Entwicklung von Integration Flows mit der SAP Integration Suite“.
 
-1. BTP-Subaccount anlegen
-1. Entitlements hinzufügen
-1. ABAP Environment anlegen
-1. Integration Suite aktivieren
-1. Repository importieren
-1. RAP publishen
-1. Communication Arrangement
-1. iFlow importieren
-1. Postman Collection importieren
-1. Ersten Test durchführen
+## Inhalte
+
+- `src/`: RAP-Anwendung im SAP BTP ABAP Environment
+- `integration-suite/`: Integration Package, Schemas und Skripte
+- `postman/`: Testaufrufe
+- `docs/`: Einrichtung und Architektur
+
+## Ablauf des Beispiels
+
+Postman → SAP Integration Suite → RAP-OData-Service
