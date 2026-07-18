@@ -6,7 +6,7 @@ Dieses Repository enthält die Artefakte des Workshops
 ## Inhalte
 
 - `src/`: RAP-Anwendung im SAP BTP ABAP Environment
-- `integration-suite/`: Integration Package, Schemas und Skripte
+- `integration-suite/`: Integration Package, Schemas und Beispieldateien
 - `postman/`: Testaufrufe
 - `docs/`: Einrichtung und Architektur
 
