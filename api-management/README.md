@@ -5,18 +5,9 @@ Dieses Verzeichnis enthält die Artefakte und Dokumentationen für den Workshop
 
 Im Workshop wird der OData-Service GWSAMPLE_BASIC auf einer ABAP Platform 2023 schrittweise als verwaltete API bereitgestellt, abgesichert und überwacht.
 
-## Verzeichnisstruktur
-
-```text
-api-management/
-├── README.md
-├── api-proxy/
-├── docs/
-```
-
 ## API-Proxy-Versionen
 
-Die Dateien unter `api-proxy` enthalten exportierte Entwicklungsstände des API Proxys.
+Die zip-Dateien unter `api-proxy` enthalten exportierte Entwicklungsstände des API Proxys.
 
 | Version | Inhalt |
 |---|---|
