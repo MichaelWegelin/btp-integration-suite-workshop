@@ -7,7 +7,7 @@ Im Workshop wird der OData-Service GWSAMPLE_BASIC auf einer ABAP Platform 2023 s
 
 ## API-Proxy-Versionen
 
-Die zip-Dateien unter `api-proxy` enthalten exportierte Entwicklungsstände des API Proxys.
+Die zip-Dateien enthalten exportierte Entwicklungsstände des API Proxys.
 
 | Version | Inhalt |
 |---|---|
