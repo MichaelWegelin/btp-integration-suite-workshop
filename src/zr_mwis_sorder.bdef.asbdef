@@ -2,24 +2,25 @@ managed implementation in class ZBP_R_MWIS_SORDER unique;
 strict ( 2 );
 extensible;
 define behavior for ZR_MWIS_SORDER alias SalesOrder
-persistent table ZMWIS_SORDER
+persistent table zmwis_sorder
 extensible
 etag master LocalChangedAt
 lock master
-authorization master( global )
+authorization master ( global )
+with additional save
 {
   field ( readonly )
-   LocalCreatedBy,
-   LocalCreatedAt,
-   LocalChangedBy,
-   LocalChangedAt,
-   LastChangedAt;
+  LocalCreatedBy,
+  LocalCreatedAt,
+  LocalChangedBy,
+  LocalChangedAt,
+  LastChangedAt;
 
   field ( numbering : managed, readonly )
-   OrderUUID;
+  OrderUUID;
 
-  field (readonly)
-    OrderDate;
+  field ( readonly )
+  OrderDate;
 
 
   create;
@@ -28,20 +29,22 @@ authorization master( global )
 
   determination SetDefaults on modify { create; }
 
-  mapping for ZMWIS_SORDER corresponding extensible
-  {
-    OrderUUID = ORDER_UUID;
-    ExternalOrderID = EXTERNAL_ORDER_ID;
-    CustomerName = CUSTOMER_NAME;
-    GrossAmount = GROSS_AMOUNT;
-    CurrencyCode = CURRENCY_CODE;
-    OrderDate = ORDER_DATE;
-    Status = STATUS;
-    LocalCreatedBy = LOCAL_CREATED_BY;
-    LocalCreatedAt = LOCAL_CREATED_AT;
-    LocalChangedBy = LOCAL_CHANGED_BY;
-    LocalChangedAt = LOCAL_CHANGED_AT;
-    LastChangedAt = LAST_CHANGED_AT;
-  }
+  event SalesOrderCreated parameter ZA_MWIS_SOC_Event;
+
+  mapping for zmwis_sorder corresponding extensible
+    {
+      OrderUUID       = ORDER_UUID;
+      ExternalOrderID = EXTERNAL_ORDER_ID;
+      CustomerName    = CUSTOMER_NAME;
+      GrossAmount     = GROSS_AMOUNT;
+      CurrencyCode    = CURRENCY_CODE;
+      OrderDate       = ORDER_DATE;
+      Status          = STATUS;
+      LocalCreatedBy  = LOCAL_CREATED_BY;
+      LocalCreatedAt  = LOCAL_CREATED_AT;
+      LocalChangedBy  = LOCAL_CHANGED_BY;
+      LocalChangedAt  = LOCAL_CHANGED_AT;
+      LastChangedAt   = LAST_CHANGED_AT;
+    }
 
 }

@@ -1,0 +1,184 @@
+@Metadata.layer: #CORE
+
+@UI.headerInfo: {
+  typeName:       'Sales Order',
+  typeNamePlural: 'Sales Orders',
+  title: {
+    type:  #STANDARD,
+    value: 'ExternalOrderID'
+  },
+  description: {
+    type:  #STANDARD,
+    value: 'CustomerName'
+  }
+}
+
+annotate entity ZC_MWIS_SORDER with
+{
+  @UI.facet: [
+    {
+      id:              'GeneralData',
+      purpose:         #STANDARD,
+      type:            #IDENTIFICATION_REFERENCE,
+      label:           'General Data',
+      targetQualifier: 'General',
+      position:        10
+    },
+    {
+      id:              'AdministrativeData',
+      purpose:         #STANDARD,
+      type:            #IDENTIFICATION_REFERENCE,
+      label:           'Administrative Data',
+      targetQualifier: 'Administration',
+      position:        20
+    }
+  ]
+  @UI.hidden: true
+  OrderUUID;
+
+  @EndUserText.label: 'Order ID'
+  @UI.lineItem: [
+    {
+      position:   10,
+      importance: #HIGH
+    }
+  ]
+  @UI.selectionField: [
+    {
+      position: 10
+    }
+  ]
+  @UI.identification: [
+    {
+      position:  10,
+      qualifier: 'General'
+    }
+  ]
+  ExternalOrderID;
+
+  @EndUserText.label: 'Customer'
+  @UI.lineItem: [
+    {
+      position:   20,
+      importance: #HIGH
+    }
+  ]
+  @UI.selectionField: [
+    {
+      position: 20
+    }
+  ]
+  @UI.identification: [
+    {
+      position:  20,
+      qualifier: 'General'
+    }
+  ]
+  CustomerName;
+
+  @EndUserText.label: 'Gross Amount'
+  @UI.lineItem: [
+    {
+      position:   30,
+      importance: #HIGH
+    }
+  ]
+  @UI.identification: [
+    {
+      position:  30,
+      qualifier: 'General'
+    }
+  ]
+  GrossAmount;
+
+  @EndUserText.label: 'Currency'
+  @UI.identification: [
+    {
+      position:  40,
+      qualifier: 'General'
+    }
+  ]
+  CurrencyCode;
+
+  @EndUserText.label: 'Order Date'
+  @UI.lineItem: [
+    {
+      position:   40,
+      importance: #MEDIUM
+    }
+  ]
+  @UI.selectionField: [
+    {
+      position: 30
+    }
+  ]
+  @UI.identification: [
+    {
+      position:  50,
+      qualifier: 'General'
+    }
+  ]
+  OrderDate;
+
+  @EndUserText.label: 'Status'
+  @UI.lineItem: [
+    {
+      position:   50,
+      importance: #HIGH
+    }
+  ]
+  @UI.selectionField: [
+    {
+      position: 40
+    }
+  ]
+  @UI.identification: [
+    {
+      position:  60,
+      qualifier: 'General'
+    }
+  ]
+  Status;
+
+  @EndUserText.label: 'Created By'
+  @UI.identification: [
+    {
+      position:  10,
+      qualifier: 'Administration'
+    }
+  ]
+  LocalCreatedBy;
+
+  @EndUserText.label: 'Created At'
+  @UI.identification: [
+    {
+      position:  20,
+      qualifier: 'Administration'
+    }
+  ]
+  LocalCreatedAt;
+
+  @EndUserText.label: 'Changed By'
+  @UI.identification: [
+    {
+      position:  30,
+      qualifier: 'Administration'
+    }
+  ]
+  LocalChangedBy;
+
+  @EndUserText.label: 'Changed At'
+  @UI.identification: [
+    {
+      position:  40,
+      qualifier: 'Administration'
+    }
+  ]
+  LocalChangedAt;
+
+  @UI.hidden: true
+  LastChangedAt;
+
+  @UI.hidden: true
+  _BaseEntity;
+}

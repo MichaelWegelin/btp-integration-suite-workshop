@@ -1,0 +1,6 @@
+@EndUserText.label: 'Service Definition for ZC_MWIS_SORDER'
+@ObjectModel.leadingEntity.name: 'ZC_MWIS_SORDER'
+define service ZUI_MWIS_SORDER_O2
+  provider contracts odata_v2_ui {
+  expose ZC_MWIS_SORDER as SalesOrder;
+}

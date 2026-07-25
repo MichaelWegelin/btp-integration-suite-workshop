@@ -1,9 +1,9 @@
 @AccessControl.authorizationCheck: #MANDATORY
 @Metadata.allowExtensions: true
 @ObjectModel.sapObjectNodeType.name: 'ZMWIS_SORDER'
-@EndUserText.label: '###GENERATED Core Data Service Entity'
+@EndUserText.label: 'Sales Order'
 define root view entity ZR_MWIS_SORDER
-  as select from ZMWIS_SORDER as SalesOrder
+  as select from zmwis_sorder as SalesOrder
 {
   key order_uuid as OrderUUID,
   external_order_id as ExternalOrderID,

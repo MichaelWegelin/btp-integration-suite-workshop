@@ -1,0 +1,21 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Event Binding for SalesOrderCreated Event",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "producerNamespace": "mwis",
+  "producer": "PE0DC67EAE7406D452588F8073D063083",
+  "producerVersion": "0001",
+  "boName": "ZMWIS_SORDER",
+  "boOperation": "Created",
+  "producerType": "mwis.ZMWISxSORDER.Created.v*",
+  "events": [
+    {
+      "eventVersion": "0001",
+      "entityName": "ZR_MWIS_SORDER",
+      "entityEventName": "SALESORDERCREATED"
+    }
+  ]
+}
