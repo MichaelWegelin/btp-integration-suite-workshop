@@ -1,17 +1,13 @@
 # SAP Integration Suite Workshop
 
-Dieses Repository enthält die Artefakte des Workshops
-„Entwicklung von Integration Flows mit der SAP Integration Suite“.
+Dieses Repository enthält die Artefakte der Workshopreihe zur Integration Suite
 
 ## Inhalte
 
+- `api-management/`: Workshop Teil 2: API Management
 - `docs/`: Einrichtung und Architektur
-- `integration-suite/`: Integration Package, Schemas und Beispieldateien
+- `event-mesh/`: Workshop Teil 3: Event Mesh
+- `integration-suite/`: Workshop Teil 1: Cloud Integration
 - `postman/`: Testaufrufe
 - `slides/`: Vortragsfolien
 - `src/`: RAP-Anwendung im SAP BTP ABAP Environment
-
-
-## Ablauf des Beispiels
-
-Postman → SAP Integration Suite → RAP-OData-Service
